@@ -14,25 +14,25 @@ logger = logging.getLogger(__name__)
 
 
 def transfer_to_plan():
-    from triage_agent.agents import plan_agent
+    from planner_agent.agents import plan_agent
 
     return plan_agent
 
 
 def transfer_to_google_maps():
-    from triage_agent.agents import google_maps_agent
+    from planner_agent.agents import google_maps_agent
 
     return google_maps_agent
 
 
 def transfer_to_weather():
-    from triage_agent.agents import weather_agent
+    from planner_agent.agents import weather_agent
 
     return weather_agent
 
 
 def transfer_back_to_triage():
-    from triage_agent.agents import triage_agent
+    from planner_agent.agents import triage_agent
 
     return triage_agent
 
